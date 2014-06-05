@@ -6,6 +6,8 @@
 #include "GERandom.h"
 #include "GEInput.h"
 #include "GEMouse.h"
+#include "GESoundCore.h"
+
 extern SDL_Surface * screen;
 extern SDL_Event event;
 

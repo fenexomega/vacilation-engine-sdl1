@@ -66,12 +66,14 @@ void GEGraphicsCore::clearScreen(Uint32 color) {
 }
 
 bool GEGraphicsCore::initGraphics() {
-    GE_LOG("Initializing Graphics.");
+    GE_PRINT("Initializing Graphics: ");
     if (SDL_Init(SDL_INIT_VIDEO) != 0)
     {
         GE_LOG("Graphics cannot be initialized: \n\n" << SDL_GetError());
         return false;
     }
+    
+    GE_LOG("Great");    
 
     screen = SDL_SetVideoMode(GE_GLOBAL_SCREEN_WIDTH,
                               GE_GLOBAL_SCREEN_HEIGHT, GE_GLOBAL_SCREEN_BPP, SDL_SWSURFACE);

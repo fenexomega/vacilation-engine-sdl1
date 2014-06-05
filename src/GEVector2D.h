@@ -9,6 +9,8 @@ private:
 public:
     GEVector2D(int x, int y);
     void Translate(int x, int y);
+    int getX();
+    int getY();
     
 };
 

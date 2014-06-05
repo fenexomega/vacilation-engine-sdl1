@@ -7,7 +7,7 @@ Engine::Engine()
 bool Engine::InitSystems()
 {
     bool allGreat;
-    allGreat = GEGraphicsCore::initGraphics();
+    allGreat = GEGraphicsCore::initGraphics() && GESoundCore::initSound();
     
     if(allGreat)
     {

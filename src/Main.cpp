@@ -10,20 +10,15 @@
 
 #include "Main.h"
 #include "Engine.h"
-//#include "DebugGames/CollisionTest.h"
-//#include "DebugGames/ScrollingTest.h"
-//#include "DebugGames/PlayerTest.h"
-//#include "DebugGames/FontTest.h"
-//#include "DebugGames/DialogueTest.h"
-//#include "DebugGames/RandTest.h"
 #include "Game/FinalGame.h"
+#include "Demo/StarInSpace.h"
 
 int main(int argc, char **argv) 
 {
     if(!Engine::InitSystems())
         return EXIT_FAILURE;
     
-    FinalGame game;
+    StarInSpace game;
     
     Engine::Run(&game);
 	return EXIT_SUCCESS;
